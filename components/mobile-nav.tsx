@@ -19,10 +19,9 @@ export function MobileNav() {
             <SheetTrigger asChild>
                 <Button
                     variant="ghost"
-                    className="mr-2 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
+                    className="mr-2 px-0 rounded-full h-24 w-24 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
                 >
-                    <Menu className="h-6 w-6" />
-                    <span className="sr-only">Toggle Menu</span>
+                    <Menu className="size-8" strokeWidth={4} color="black" />
                 </Button>
             </SheetTrigger>
             <SheetContent side="left" className="pr-0 border-r-primary/20 bg-background/95 backdrop-blur-2xl">
@@ -33,21 +32,21 @@ export function MobileNav() {
                     <nav className="flex flex-col space-y-6 flex-1">
                         <Link
                             href="#problem"
-                            className="text-lg font-medium text-foreground/80 transition-colors hover:text-primary hover:translate-x-1 duration-200"
+                            className="text-2xl font-medium text-foreground/80 transition-colors hover:text-primary hover:translate-x-1 duration-200"
                             onClick={() => setOpen(false)}
                         >
                             The Problem
                         </Link>
                         <Link
                             href="#solution"
-                            className="text-lg font-medium text-foreground/80 transition-colors hover:text-primary hover:translate-x-1 duration-200"
+                            className="text-2xl font-medium text-foreground/80 transition-colors hover:text-primary hover:translate-x-1 duration-200"
                             onClick={() => setOpen(false)}
                         >
                             Our Solution
                         </Link>
                         <Link
                             href="#team"
-                            className="text-lg font-medium text-foreground/80 transition-colors hover:text-primary hover:translate-x-1 duration-200"
+                            className="text-2xl font-medium text-foreground/80 transition-colors hover:text-primary hover:translate-x-1 duration-200"
                             onClick={() => setOpen(false)}
                         >
                             Team
@@ -55,7 +54,7 @@ export function MobileNav() {
                     </nav>
                     <div className="mt-auto pb-8">
                         <div className="h-px w-full bg-gradient-to-r from-border to-transparent mb-6" />
-                        <Button className="w-full bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 shadow-lg shadow-primary/20 text-lg py-6" asChild>
+                        <Button className="w-full bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 shadow-lg shadow-primary/20 text-xl py-6" asChild>
                             <Link href="#contact" onClick={() => setOpen(false)}>
                                 Contact Us
                             </Link>
