@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { FileText, Download } from "lucide-react"
+import { PdfViewerWrapper } from "@/components/pdf-viewer-wrapper"
 
 export default function ResourcesPage() {
     const resourcesDir = path.join(process.cwd(), "public", "resources")
@@ -25,7 +26,7 @@ export default function ResourcesPage() {
                 </p>
             </div>
 
-            <div className="w-full mx-auto">
+            <div className="w-full h-[85vh] mx-auto">
                 {files.map((file) => (
                     <Card key={file} className="flex flex-col w-full">
                         <CardHeader>
@@ -38,12 +39,8 @@ export default function ResourcesPage() {
                             <p className="text-base text-muted-foreground mb-6">
                                 Detailed project presentation covering our AI-driven solar lamp technology, implementation plan, and impact analysis for sustainable aquaculture in Bangladesh.
                             </p>
-                            <div className="w-full h-[85vh] rounded-md border bg-muted/50 flex items-center justify-center overflow-hidden">
-                                <iframe
-                                    src={`/resources/${file}#toolbar=0&navpanes=0&scrollbar=0`}
-                                    className="w-full h-full"
-                                    title="PDF Preview"
-                                />
+                            <div className="w-full h-[85vh] rounded-md border bg-muted/50 overflow-hidden">
+                                <PdfViewerWrapper file={`/resources/${file}`} />
                             </div>
                         </CardContent>
                         <CardFooter>
