@@ -30,9 +30,9 @@ export function ChatMessage({ role, content }: ChatMessageProps) {
                     <div className="prose prose-sm dark:prose-invert prose-p:my-1 prose-ul:my-1 prose-li:my-0 break-words">
                         <ReactMarkdown
                             components={{
-                                a: ({ children, href }: { children: React.ReactNode; href?: string }) => (
-                                    <a href={href} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline underline-offset-4">
-                                        {children}
+                                a: (props: any) => (
+                                    <a href={props.href} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline underline-offset-4">
+                                        {props.children}
                                     </a>
                                 ),
                             }}
