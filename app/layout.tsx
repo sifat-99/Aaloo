@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { ChatInterface } from "@/components/chat/chat-interface";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
                 <SiteHeader />
                 <main className="flex-1 ">{children}</main>
                 <SiteFooter />
+                <ChatInterface />
             </body>
         </html>
     );

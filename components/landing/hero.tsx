@@ -6,11 +6,11 @@ export function Hero() {
     return (
         <section className="relative w-full min-h-screen lg:px-48 mx-auto flex items-center pt-20 pb-10 overflow-hidden bg-slate-950">
             {/* Background Texture/Gradient */}
-            <div className="absolute inset-0 z-0 opacity-40">
+            <div className="absolute inset-0 z-0 opacity-90">
                 <img
                     src="/hero_solar_pond_1768488851114.png"
                     alt="Background"
-                    className="w-full h-full object-cover blur-sm"
+                    className="w-full h-full object-cover blur-xs"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-slate-950/60"></div>
             </div>
