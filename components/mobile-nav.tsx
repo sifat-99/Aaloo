@@ -47,11 +47,32 @@ export function MobileNav() {
                             Our Solution
                         </Link>
                         <Link
+                            href="#impact"
+                            className="text-2xl font-medium text-foreground/80 transition-colors hover:text-primary hover:translate-x-1 duration-200"
+                            onClick={() => setOpen(false)}
+                        >
+                            Impact
+                        </Link>
+                        <Link
+                            href="#operations"
+                            className="text-2xl font-medium text-foreground/80 transition-colors hover:text-primary hover:translate-x-1 duration-200"
+                            onClick={() => setOpen(false)}
+                        >
+                            Operations
+                        </Link>
+                        <Link
                             href="#team"
                             className="text-2xl font-medium text-foreground/80 transition-colors hover:text-primary hover:translate-x-1 duration-200"
                             onClick={() => setOpen(false)}
                         >
                             Team
+                        </Link>
+                        <Link
+                            href="#about"
+                            className="text-2xl font-medium text-foreground/80 transition-colors hover:text-primary hover:translate-x-1 duration-200"
+                            onClick={() => setOpen(false)}
+                        >
+                            About
                         </Link>
                     </nav>
                     <div className="mt-auto pb-8">

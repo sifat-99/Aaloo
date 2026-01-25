@@ -28,10 +28,28 @@ export function SiteHeader() {
                                 Our Solution
                             </Link>
                             <Link
+                                href="#impact"
+                                className="transition-all hover:text-primary hover:scale-105 text-foreground/70"
+                            >
+                                Impact
+                            </Link>
+                            <Link
+                                href="#operations"
+                                className="transition-all hover:text-primary hover:scale-105 text-foreground/70"
+                            >
+                                Operations
+                            </Link>
+                            <Link
                                 href="#team"
                                 className="transition-all hover:text-primary hover:scale-105 text-foreground/70"
                             >
                                 Team
+                            </Link>
+                            <Link
+                                href="#about"
+                                className="transition-all hover:text-primary hover:scale-105 text-foreground/70"
+                            >
+                                About
                             </Link>
                         </nav>
                     </div>
