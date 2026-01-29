@@ -15,7 +15,7 @@ export function SiteHeader() {
                         <Link href="/" className="flex items-center space-x-2">
                             <img src="/Aaloo.png" alt="Team Aaloo Logo" className="h-28 w-28 object-contain" />
                         </Link>
-                        <nav className="flex items-center space-x-8 text-xl font-medium text-black dark:text-white">
+                        <nav className="flex items-center space-x-8 text-lg font-medium text-black dark:text-white">
                             <Link href="#problem" className="transition-all hover:text-primary hover:scale-105 text-foreground/70">The Problem</Link>
                             <Link href="#solution" className="transition-all hover:text-primary hover:scale-105 text-foreground/70">Our Solution</Link>
                             <Link href="#impact" className="transition-all hover:text-primary hover:scale-105 text-foreground/70">Impact</Link>

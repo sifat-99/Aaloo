@@ -99,7 +99,7 @@ export function ImpactSection() {
                             <div className="grid grid-cols-2 gap-4 text-center">
                                 <div className="p-4 rounded-xl bg-blue-50 dark:bg-slate-900 border border-blue-100">
                                     <div className="text-3xl font-bold text-blue-600">35-40M</div>
-                                    <div className="text-xs text-muted-foreground uppercase tracking-wide mt-1">Total Ponds Worldwide</div>
+                                    <div className="text-xs text-muted-foreground uppercase tracking-wide mt-1">Small Ponds Worldwide</div>
                                 </div>
                                 <div className="p-4 rounded-xl bg-green-50 dark:bg-slate-900 border border-green-100">
                                     <div className="text-3xl font-bold text-green-600">10-14M</div>
