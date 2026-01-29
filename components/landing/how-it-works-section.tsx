@@ -65,7 +65,7 @@ const steps = [
 
 export function HowItWorksSection() {
     return (
-        <section id="operations" className="container py-12 lg:py-12 mx-auto relative">
+        <section id="how-it-works" className="relative container space-y-6 py-8 md:py-12 lg:py-24 mx-auto bg-white/20 backdrop-blur-md rounded-3xl my-8 border border-white/10 shadow-lg dark:bg-slate-950/20">
             <div className="text-center space-y-4 mb-16">
                 <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary">
                     HOW AALOO WORKS

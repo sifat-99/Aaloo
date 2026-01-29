@@ -1,5 +1,7 @@
 import { Sun, Sprout, TrendingUp } from "lucide-react"
 
+import { SolutionCharts } from "@/components/landing/solution-charts"
+
 export function SolutionSection() {
     return (
         <section id="solution" className="container space-y-6 py-8 md:py-12 lg:py-24 mx-auto">
@@ -43,6 +45,8 @@ export function SolutionSection() {
                     </div>
                 </div>
             </div>
+
+            <SolutionCharts />
         </section>
     )
 }

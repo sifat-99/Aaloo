@@ -24,7 +24,7 @@ const bdMarketSegments = [
 
 export function ImpactSection() {
     return (
-        <section id="impact" className="container bg-slate-50 py-12 dark:bg-transparent lg:py-24 mx-auto my-8 rounded-3xl overflow-hidden">
+        <section id="impact" className="container bg-white/40 backdrop-blur-lg py-12 dark:bg-slate-900/40 lg:py-24 mx-auto my-8 rounded-3xl overflow-hidden shadow-xl border border-white/20">
             <div className="text-center space-y-4 -mt-20 mb-16">
                 <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary">
                     Real World Impact

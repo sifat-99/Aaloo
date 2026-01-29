@@ -5,7 +5,7 @@ import { Particles } from "@/components/ui/particles"
 
 export function Hero() {
     return (
-        <section className="relative w-full min-h-screen lg:px-48 mx-auto flex items-center pt-20 pb-10 overflow-hidden bg-slate-950">
+        <section className="relative w-full min-h-screen lg:px-48 mx-auto flex items-center pt-20 pb-10 overflow-hidden bg-transparent">
             {/* Background Texture/Gradient */}
             <div className="absolute inset-0 z-0 opacity-90">
                 <img

@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { MobileNav } from "@/components/mobile-nav"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export function SiteHeader() {
     return (
@@ -14,46 +15,16 @@ export function SiteHeader() {
                         <Link href="/" className="flex items-center space-x-2">
                             <img src="/Aaloo.png" alt="Team Aaloo Logo" className="h-28 w-28 object-contain" />
                         </Link>
-                        <nav className="flex items-center space-x-8 text-xl font-medium text-black">
-                            <Link
-                                href="#problem"
-                                className="transition-all hover:text-primary hover:scale-105 text-foreground/70"
-                            >
-                                The Problem
-                            </Link>
-                            <Link
-                                href="#solution"
-                                className="transition-all hover:text-primary hover:scale-105 text-foreground/70"
-                            >
-                                Our Solution
-                            </Link>
-                            <Link
-                                href="#impact"
-                                className="transition-all hover:text-primary hover:scale-105 text-foreground/70"
-                            >
-                                Impact
-                            </Link>
-                            {/* <Link
-                                href="#operations"
-                                className="transition-all hover:text-primary hover:scale-105 text-foreground/70"
-                            >
-                                Operations
-                            </Link> */}
-                            <Link
-                                href="#team"
-                                className="transition-all hover:text-primary hover:scale-105 text-foreground/70"
-                            >
-                                Team
-                            </Link>
-                            <Link
-                                href="#about"
-                                className="transition-all hover:text-primary hover:scale-105 text-foreground/70"
-                            >
-                                About
-                            </Link>
+                        <nav className="flex items-center space-x-8 text-xl font-medium text-black dark:text-white">
+                            <Link href="#problem" className="transition-all hover:text-primary hover:scale-105 text-foreground/70">The Problem</Link>
+                            <Link href="#solution" className="transition-all hover:text-primary hover:scale-105 text-foreground/70">Our Solution</Link>
+                            <Link href="#impact" className="transition-all hover:text-primary hover:scale-105 text-foreground/70">Impact</Link>
+                            <Link href="#team" className="transition-all hover:text-primary hover:scale-105 text-foreground/70">Team</Link>
+                            <Link href="#about" className="transition-all hover:text-primary hover:scale-105 text-foreground/70">About</Link>
                         </nav>
                     </div>
-                    <nav className="flex items-center">
+                    <nav className="flex items-center gap-4">
+                        <ThemeToggle />
                         <Button className="bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 shadow-md hover:shadow-lg transition-all" asChild>
                             <Link href="#contact">Contact Us</Link>
                         </Button>

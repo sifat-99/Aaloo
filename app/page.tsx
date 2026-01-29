@@ -10,7 +10,7 @@ import { HowItWorksSection } from "@/components/landing/how-it-works-section";
 
 export default function Home() {
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen relative">
             <Hero />
             <ProblemSection />
             <SolutionSection />
