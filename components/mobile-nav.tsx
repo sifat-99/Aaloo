@@ -12,6 +12,8 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet"
 
+import { ThemeToggle } from "@/components/theme-toggle"
+
 export function MobileNav() {
     const [open, setOpen] = React.useState(false)
 
@@ -28,9 +30,14 @@ export function MobileNav() {
             <SheetContent side="left" className="pr-0 border-r-primary/20 bg-background/95 backdrop-blur-2xl">
                 <SheetTitle className="sr-only">Mobile Navigation Menu</SheetTitle>
                 <div className="flex flex-col h-full pl-6 pr-6 pb-6 pt-10">
-                    <Link href="/" className="flex items-center space-x-2 mb-8" onClick={() => setOpen(false)}>
-                        <img src="/Aaloo.png" alt="Team Aaloo Logo" className="h-28 w-28 object-contain" />
-                    </Link>
+                    <div className="flex items-center justify-between mb-8">
+                        <Link href="/" className="flex items-center space-x-2" onClick={() => setOpen(false)}>
+                            <img src="/Aaloo.png" alt="Team Aaloo Logo" className="h-28 w-28 object-contain" />
+                        </Link>
+                        <div>
+                            <ThemeToggle />
+                        </div>
+                    </div>
                     <nav className="flex flex-col space-y-6 flex-1">
                         <Link
                             href="#problem"
