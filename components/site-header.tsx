@@ -14,7 +14,7 @@ export function SiteHeader() {
                         <Link href="/" className="flex items-center space-x-2">
                             <img src="/Aaloo.png" alt="Team Aaloo Logo" className="h-28 w-28 object-contain" />
                         </Link>
-                        <nav className="flex items-center space-x-8 text-sm font-medium text-black">
+                        <nav className="flex items-center space-x-8 text-xl font-medium text-black">
                             <Link
                                 href="#problem"
                                 className="transition-all hover:text-primary hover:scale-105 text-foreground/70"
@@ -33,12 +33,12 @@ export function SiteHeader() {
                             >
                                 Impact
                             </Link>
-                            <Link
+                            {/* <Link
                                 href="#operations"
                                 className="transition-all hover:text-primary hover:scale-105 text-foreground/70"
                             >
                                 Operations
-                            </Link>
+                            </Link> */}
                             <Link
                                 href="#team"
                                 className="transition-all hover:text-primary hover:scale-105 text-foreground/70"

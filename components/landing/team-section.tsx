@@ -2,20 +2,20 @@
 export function TeamSection() {
     const teamMembers = [
         {
-            name: "MD SIRAJUL ISLAM",
-            image: "/resources/team images/Siraj.png",
-        },
-        {
             name: "Fazla Rabbi",
             image: "/resources/team images/Fazla.png",
         },
         {
-            name: "Md Sajidul Islam Samin",
-            image: "/resources/team images/Sajid.png",
+            name: "MD SIRAJUL ISLAM",
+            image: "/resources/team images/Siraj.png",
         },
         {
             name: "Md Abdur Rahman Sifat",
             image: "/resources/team images/Sifat.png",
+        },
+        {
+            name: "Md Sajidul Islam Samin",
+            image: "/resources/team images/Sajid.png",
         },
     ]
     return (

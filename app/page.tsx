@@ -6,6 +6,7 @@ import { ImpactSection } from "@/components/landing/impact-section";
 import { TeamSection } from "@/components/landing/team-section";
 import { AboutSection } from "@/components/landing/about-section";
 import { ContactSection } from "@/components/landing/contact-section";
+import { HowItWorksSection } from "@/components/landing/how-it-works-section";
 
 export default function Home() {
     return (
@@ -13,6 +14,7 @@ export default function Home() {
             <Hero />
             <ProblemSection />
             <SolutionSection />
+            {/* <HowItWorksSection /> */}
             <ImpactSection />
             <GallerySection />
             <TeamSection />

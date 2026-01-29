@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
+import { Particles } from "@/components/ui/particles"
 
 export function Hero() {
     return (
@@ -13,6 +14,17 @@ export function Hero() {
                     className="w-full h-full object-cover blur-xs"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-slate-950/60"></div>
+
+                {/* Particles Effect */}
+                <Particles
+                    className="absolute inset-0 pointer-events-none"
+                    quantity={150}
+                    ease={80}
+                    color="#ffffff"
+                    refresh
+                    speed={0.5}
+                    staticity={40}
+                />
             </div>
 
             <div className="container relative z-10 grid lg:grid-cols-2 gap-12 items-center px-4">
@@ -60,6 +72,9 @@ export function Hero() {
                     <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-blue-500/30 rounded-full blur-[100px] -z-10"></div>
                 </div>
             </div>
+
+            {/* Blending Gradient to Problem Section */}
+            <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-transparent to-slate-50/10 pointer-events-none"></div>
         </section>
     )
 }
