@@ -23,17 +23,17 @@ export function TeamSection() {
         },
         {
       name: "MD SIRAJUL ISLAM",
-             role: "Team Member",
+             role: "Co-Founder",
              image: "/resources/team images/Siraj.png",
          },
          {
             name: "Md Abdur Rahman Sifat",
-            role: "Team Member",
+            role: "Research Analyst",
              image: "/resources/team images/Sifat.png",
          },
          {
             name: "Md Sajidul Islam Samin",
-             role: "Team Member",
+             role: "Creative analyst and Designer",
             image: "/resources/team images/Sajid.png",
         },
     ]
