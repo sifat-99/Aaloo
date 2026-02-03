@@ -21,21 +21,21 @@ export function TeamSection() {
             role: "Market Analysis",
             image: "/resources/team images/Alvi.png",
         },
-        // {
-        //     name: "MD SIRAJUL ISLAM",
-        //     role: "Team Member",
-        //     image: "/resources/team images/Siraj.png",
-        // },
-        // {
-        //     name: "Md Abdur Rahman Sifat",
-        //     role: "Team Member",
-        //     image: "/resources/team images/Sifat.png",
-        // },
-        // {
-        //     name: "Md Sajidul Islam Samin",
-        //     role: "Team Member",
-        //     image: "/resources/team images/Sajid.png",
-        // },
+        {
+      name: "MD SIRAJUL ISLAM",
+             role: "Team Member",
+             image: "/resources/team images/Siraj.png",
+         },
+         {
+            name: "Md Abdur Rahman Sifat",
+            role: "Team Member",
+             image: "/resources/team images/Sifat.png",
+         },
+         {
+            name: "Md Sajidul Islam Samin",
+             role: "Team Member",
+            image: "/resources/team images/Sajid.png",
+        },
     ]
 
     const getInitials = (name: string) => {
