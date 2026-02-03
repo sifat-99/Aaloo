@@ -28,7 +28,7 @@ export function TeamSection() {
          },
          {
             name: "Md Abdur Rahman Sifat",
-            role: "Research Analyst",
+            role: "Research Analyst & Web developer",
              image: "/resources/team images/Sifat.png",
          },
          {
